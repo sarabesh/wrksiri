@@ -1,0 +1,110 @@
+
+.logo{
+	height: 40px;
+	width: 300px;
+	
+}
+.fright{
+	float: right;
+}
+.fleft{
+	float: left;
+}
+
+.icon{
+width:50px;
+height: 50px;
+margin: 10px;
+
+}
+.clearfix{
+	clear:both;
+}
+
+.icon-list{
+	
+
+}
+
+body{
+	font-family: 'Lato', sans-serif;
+	background:#442D4B;
+	color: white;
+
+	
+	
+}
+
+header{
+	padding: 40px;
+	height:40px;
+
+}
+
+header ul li {
+	display: inline-block;
+	padding: 10px 15px;
+
+}
+
+header ul li a{
+	text-decoration: none;
+	font-size: :13px;
+	color:#ffcb59;
+}
+
+footer{
+	padding: 40px;
+	height:40px;
+	background: black;
+	margin-top: 20px;
+
+
+}
+
+.movie-form{
+	width:500px;
+	margin:0 auto;
+}
+
+.movie-form h2{
+	text-align: center;
+	font-size: 28px;
+	margin-bottom: 20px;
+}
+
+.movie-form label,.movie-form input{
+	display: block;
+}
+
+.movie-form input,.movie-form textarea,.movie-form select{
+	width: 100%;
+	background: #442D4B;
+	border: 1px solid white;
+	margin:7px 0 15px;
+	color:white;
+	padding: 0 5px;
+	font-size: 19px;
+	font-family: inherit;
+}
+
+.movie-form input{
+	height: 40px;
+}
+
+.ini{
+	display: inline-block;
+	width: 50%;
+	
+}
+
+Button{
+
+	background:#ffcb59;
+	color:white;
+	width:150px;
+	height:50px;
+	font-size: 20px;
+	display: block;
+	margin:0 auto;
+}
