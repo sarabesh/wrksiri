@@ -61,7 +61,9 @@ footer{
 
 
 }
-
+form{
+	white-space: nowrap;
+}
 .movie-form{
 	width:500px;
 	margin:0 auto;
@@ -92,10 +94,18 @@ footer{
 	height: 40px;
 }
 
-.ini{
-	display: inline-block;
-	width: 50%;
-	
+.divide{
+display:inline-block;
+width:50%;
+white-space: normal;
+padding-left:10px;
+
+
+}
+
+.language-div{
+padding-left: 0;
+
 }
 
 Button{
@@ -107,4 +117,46 @@ Button{
 	font-size: 20px;
 	display: block;
 	margin:0 auto;
+}
+
+h2{
+	color:white;
+	font-size: 40px;
+}
+
+.card{
+	display: inline-block;
+	
+	width: 25%;
+	white-space: normal;
+}
+.rating{
+	display: inline-block;
+}
+
+.list{
+	white-space: nowrap;
+	margin: 50px 0;
+}
+
+.movie-poster-img{
+	width: 250px;
+	height: 350px;
+}
+.star-img{
+	width: 40px;
+	height: 40px;
+}
+
+.main-li{
+	margin-left:80px;
+	margin-right:80px;
+	margin-top:40px;
+}
+.movie-name{
+	font-weight: bold;
+	font-size: 20px;
+}
+.new-lang{
+	margin-top: 40px;
 }

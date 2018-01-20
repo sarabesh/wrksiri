@@ -44,11 +44,3 @@ table {
 *:focus{
 	outline: none;
 }
-.ini{
-	display: inline-block;
-}
-.projector{
-	height: 100px;
-	width: 100px;
-
-}
