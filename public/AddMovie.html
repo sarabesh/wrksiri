@@ -23,7 +23,7 @@
 
 <div class="clearfix"></div>
 
-	<form action="/#" method="Get" class="movie-form">
+	<form   class="movie-form"  onsubmit="event.preventDefault(); addMovie();>
 		<h2>Add a New Movie</h2>
 		<ul>
 			<li>
@@ -68,7 +68,7 @@
 		<label for="plot">Cast</label>
 		<textarea rows=4></textarea></li>
 		<li>
-			<Button type="submit" value="save"/>SAVE</Button></li>
+			<Button type="submit" value="save" id="submit">SAVE</Button></li>
 		</ul>
 </form>
 
