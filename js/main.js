@@ -50,7 +50,7 @@ return categoryObject;
 
 
 function constructDOM(data)
-{var categoryContent=[];
+{var categoryContent=['<div class="clearfix category">'];
 
   for(i=0;i<data.length;i++)
   {var objectSchema=data[i];
@@ -60,10 +60,11 @@ function constructDOM(data)
 for(j=0;j<objectSchema.movies.length;j++)
   {
     console.log(objectSchema.movies[j].name);
-    var categoryMovieName=$('<div class="movie picmovie "><img class="poster" src="'+objectSchema.movies[j].thumbnailUrl+'">'+objectSchema.movies[j].name+'</div>')
-    categoryContent.push(categoryMovieName);
+    var categoryMovie=$('<div class="movie fleft"><a href="#"><div class="poster"><img src="'+objectSchema.movies[j].thumbnailUrl+'" alt=""></div></a><div class="details"><p class="yearOfRelease">'+objectSchema.movies[j].releaseYear+'</p><h4 class="name">'+objectSchema.movies[j].name+'</h4></div>');
+    categoryContent.push(categoryMovie);
  }
   }
+  categoryContent.push('</div>')
     $(' .content').html(categoryContent);
 }
     //console.log(flags);
