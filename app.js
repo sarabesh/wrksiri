@@ -7,9 +7,9 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var movies = require('./routes/movies');
-
+var dbService=require('./services/DBService');
 var app = express();
-
+dbService.createConnection();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
