@@ -4,6 +4,9 @@ exports.getAllMovies=function(req,res,next){
 console.log("dbServices",dbService);
 var db=dbService.database;
 var moviesCollection=db.collection("movies");
+
+
+
 moviesCollection.find().toArray().then(function(result){
   console.log(result);
   var outputJSON={
@@ -17,3 +20,15 @@ moviesCollection.find().toArray().then(function(result){
   //dbService.createConnection();
 };
 //console.log(dbService);
+exports.addNewMovie=function(req,res,next){
+  var db=dbService.database;
+   movies=req.body;
+   moviesCollection=db.collection("movies");
+
+   moviesCollection.insert(movies).then(function(save_data) {
+     return res.json({
+       "isSuccess":true
+     });
+   });
+
+}

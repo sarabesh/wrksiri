@@ -1,11 +1,11 @@
 console.log("js added");
 $.ajax({
   type:"GET",
-  url:"https://api.myjson.com/bins/tls49",
+  url:"/movies/all",
   dataType:"json",
   success:function(response){
     //console.log("Data from server",response);
-    var data=formObject(response);
+    var data=formObject(response.data);
 
     constructDOM(data);
 },
@@ -15,6 +15,7 @@ error:function(err){
 
 
 });
+
 
 
 function formObject(resp){
@@ -35,6 +36,7 @@ function formObject(resp){
     continue;
   }
   else{
+
     flags.push(mov.language);
   }
 var objectSchema={

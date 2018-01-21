@@ -1,7 +1,7 @@
 console.log("js added");
 $.ajax({
   type:"GET",
-  url:"https://localhost/movies/all",
+  url:"/movies/all",
   dataType:"json",
   success:function(response){
     //console.log("Data from server",response);
@@ -16,6 +16,7 @@ error:function(err){
 
 });
 
+/.
 
 function formObject(resp){
   var flags=[],categoryObject=[];
@@ -34,7 +35,8 @@ function formObject(resp){
     categoryObject[index].movies.push(mov);
     continue;
   }
-  else{
+  else{y
+
     flags.push(mov.language);
   }
 var objectSchema={
